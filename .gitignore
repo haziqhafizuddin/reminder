@@ -1,0 +1,10 @@
+/.bundle
+
+/log/*
+!/log/.keep
+/tmp
+/public/uploads
+
+.env
+.rspec
+config/database.yml
