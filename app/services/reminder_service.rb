@@ -14,10 +14,19 @@ class ReminderService
           type: 'doc',
           content: [{
             type: 'paragraph',
-            content: [{
-              type: 'text',
-              text: 'Yo guys! Do not forget to submit your Standup!'
-            }]
+            content: [
+              {
+                type: 'text',
+                text: 'Yo guys! Do not forget to submit your Standup! '
+              },
+              {
+                type: 'emoji',
+                attrs: {
+                  shortName: ':bear:',
+                  text: 'bear'
+                }
+              }
+            ]
           }]
         }.to_json,
         headers: {
