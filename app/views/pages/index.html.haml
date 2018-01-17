@@ -1,1 +1,18 @@
-Reminder App for Stride!
+%h1 Reminder App for Stride!
+
+= link_to 'Retrieve All group', stride_data_path(click: true)
+
+%table
+  %thead
+    %tr
+      %th Group Name
+      %th Start At
+      %th Type
+      %th action
+  %tbody
+    - @stride.each do |stride|
+      %tr
+        %td= stride.name
+        %td= stride.starts_at
+        %td= stride.action_type
+        %td= link_to 'add time', edit_stride_group_path(stride)
