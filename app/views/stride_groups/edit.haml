@@ -1,0 +1,5 @@
+= simple_form_for @stride do |f|
+  = f.input :starts_at, as: :time
+  = f.input :message
+  = f.input :action_type, collection: StrideGroup.action_types.keys
+  = f.submit 'Save'

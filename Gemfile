@@ -38,6 +38,8 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'pry-rails'
+  gem 'pry'
 end
 
 group :development do
@@ -54,3 +56,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'envied', github: 'monterail/envied'
 gem 'httparty'
 gem 'haml-rails'
+gem 'simple_form'
