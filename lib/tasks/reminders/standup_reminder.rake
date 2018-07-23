@@ -1,6 +1,8 @@
 namespace :reminder do
   desc 'Sending Reminder'
   task standup: :environment do
-    ReminderService.new.standup_reminder
+    unless Date.today.saturday? || Date.today.sunday?
+      ReminderService.new.standup_reminder
+    end
   end
 end
